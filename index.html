@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation Planner - GREENHECK</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-content">
+        <div class="logo-section">
+          <div class="logo">GH</div>
+          <div class="logo-text">
+            <div class="company-name">GREENHECK</div>
+            <div class="tagline">Building Value in Air.</div>
+          </div>
+        </div>
+        <div class="welcome-section">
+          <span class="welcome-text">Welcome, Gary</span>
+          <div class="person-icon">👤</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Main Header -->
+      <header class="main-header">
+        <h1 class="page-title">Reservation Planner</h1>
+        <button class="return-btn">Return to My Visits</button>
+      </header>
+
+      <!-- Visit Summary Section -->
+      <section class="visit-summary-section">
+        <h2 class="section-title">Visit Summary:</h2>
+        <div class="summary-table-container">
+          <table class="summary-table">
+            <thead>
+              <tr>
+                <th>Arrival Date</th>
+                <th>Location</th>
+                <th>Customer Visit</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>08/18/2025</td>
+                <td>Schofield, WI</td>
+                <td>Customer Visit - Schofield - 8/18/2025</td>
+                <td>In Progress</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="contact-info">
+          <p>
+            Need to modify your customer visit date? Contact
+            <a href="mailto:customervisit@greenheck.com" class="email-link"
+              >customervisit@greenheck.com</a
+            >
+          </p>
+        </div>
+
+        <div class="key-contacts">
+          <div class="contact-item">
+            <span class="contact-label">Visit Contact:</span>
+            <span class="contact-value">Gary Fischbach</span>
+            <a href="#" class="edit-link">Edit Contact</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Host Office:</span>
+            <span class="contact-value">Vyron Corporation - 660</span>
+            <a href="#" class="edit-link">Edit Office #</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Area Sales Manager:</span>
+            <span class="contact-value">Eric Tufto - North Central</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rep Attendees Section -->
+      <section class="attendees-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="warning-icon">⚠️</span>
+            Rep Attendees
+          </h2>
+          <button class="add-btn">Add a Rep Attendee</button>
+        </div>
+        <div class="attendees-table-container">
+          <table class="attendees-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Name on Badge</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="3" class="no-data">
+                  You have no Rep Attendees added.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Customer Attendees Section -->
+      <section class="attendees-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="warning-icon">⚠️</span>
+            Customer Attendees
+          </h2>
+          <button class="add-btn">Add a Customer</button>
+        </div>
+        <div class="attendees-table-container">
+          <table class="attendees-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Name on Badge</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="3" class="no-data">
+                  You have no Customer Attendees added.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Visit Focus Section -->
+      <section class="visit-focus-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="warning-icon">⚠️</span>
+            Visit Focus
+          </h2>
+          <div class="action-links">
+            <a href="#" class="action-link">Save</a>
+            <a href="#" class="action-link">Select All</a>
+            <a href="#" class="action-link">Clear All</a>
+          </div>
+        </div>
+        <p class="section-subtitle">Select Areas of Interest</p>
+
+        <div class="focus-items-grid">
+          <div class="focus-item" data-item="axial-inline-hvls">
+            <span class="item-text">Axial / Inline / HVLS</span>
+          </div>
+
+          <div class="focus-item" data-item="ceiling-bathroom-exhaust">
+            <span class="item-text">Ceiling/Bathroom Exhaust</span>
+          </div>
+
+          <div class="focus-item" data-item="centrifugal-vane-axial">
+            <span class="item-text">Centrifugal and Vane Axial</span>
+          </div>
+
+          <div class="focus-item" data-item="commercial-dampers">
+            <span class="item-text">Commercial Dampers</span>
+          </div>
+
+          <div class="focus-item" data-item="dedicated-outdoor-air">
+            <span class="item-text">Dedicated Outdoor Air Systems</span>
+          </div>
+
+          <div class="focus-item" data-item="ecaps">
+            <span class="item-text">eCAPS</span>
+          </div>
+
+          <div class="focus-item" data-item="energy-recovery">
+            <span class="item-text">Energy Recovery</span>
+          </div>
+
+          <div class="focus-item" data-item="industrial-dampers">
+            <span class="item-text">Industrial Dampers</span>
+          </div>
+
+          <div class="focus-item" data-item="kitchen-ventilation">
+            <span class="item-text">Kitchen Ventilation</span>
+          </div>
+
+          <div class="focus-item" data-item="laboratory-fume-exhaust">
+            <span class="item-text">Laboratory / Fume Exhaust</span>
+          </div>
+
+          <div class="focus-item" data-item="louvers">
+            <span class="item-text">Louvers</span>
+          </div>
+
+          <div class="focus-item" data-item="make-up-air">
+            <span class="item-text">Make-Up Air</span>
+          </div>
+
+          <div class="focus-item" data-item="motor-technology">
+            <span class="item-text">Motor Technology</span>
+          </div>
+
+          <div class="focus-item" data-item="power-roof-ventilators">
+            <span class="item-text">Power Roof Ventilators</span>
+          </div>
+
+          <div class="focus-item" data-item="revit">
+            <span class="item-text">Revit</span>
+          </div>
+
+          <div class="focus-item" data-item="rooftop-units">
+            <span class="item-text">Rooftop Units</span>
+          </div>
+
+          <div class="focus-item" data-item="system-effects-demo">
+            <span class="item-text">System Effects Demonstration</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Company Background Section -->
+      <section class="company-background-section">
+        <h2 class="section-title">
+          <span class="info-icon">ℹ️</span>
+          Company Background(s)
+        </h2>
+        <div class="textarea-container">
+          <textarea
+            class="background-textarea"
+            placeholder="Type here..."
+            maxlength="1200"
+          ></textarea>
+          <div class="char-counter">0/1200</div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <a href="#" class="save-link">Save</a>
+          <button class="return-btn">Return to My Visits</button>
+        </div>
+        <div class="copyright">
+          <div class="footer-logo">GH</div>
+          <p>
+            © 2025 Greenheck Fan Corporation. All rights reserved. P.O. BOX 410
+            | Schofield, WI 54476 | (715) 359-6171
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
